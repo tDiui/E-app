@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppEng"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.appeng.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.ExerciseActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.WordListActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.WordDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.Settings"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.Search"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.Review"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.ListeningActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.FlashCardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.appeng.MainActivity"
+            android:exported="false" /> <!-- ✅ Đặt LoginActivity là màn hình khởi động đầu tiên -->
+        <activity
+            android:name="com.example.appeng.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

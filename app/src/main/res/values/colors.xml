@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#008080</color>
+    <color name="secondaryColor">#FF9800</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+
+    <color name="textColor">#212121</color>
+    <color name="subTextColor">#757575</color>
+    <color name="light_nav_background">#F8F8F8</color>
+    <color name="bottom_nav_icon_tint">#6A1B9A</color>
+
+    #aaa
+    <color name="backgroundColor">#FFFFFF</color>
+</resources>

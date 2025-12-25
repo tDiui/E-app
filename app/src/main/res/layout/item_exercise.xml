@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_stat_card"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu hỏi?"
+        android:textColor="@color/purple_700"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:lineSpacingExtra="4dp"
+        android:layout_marginBottom="12dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="6dp"
+            android:text="A. ---"
+            android:textSize="15.5sp"
+            android:background="@drawable/bg_answer_option"
+            android:buttonTint="@color/purple_700"
+            android:textColor="#000"/>
+
+        <RadioButton
+            android:id="@+id/rbB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="6dp"
+            android:text="B. ---"
+            android:textSize="15.5sp"
+            android:background="@drawable/bg_answer_option"
+            android:buttonTint="@color/purple_700"
+            android:textColor="#000"/>
+
+        <RadioButton
+            android:id="@+id/rbC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="6dp"
+            android:text="C. ---"
+            android:textSize="15.5sp"
+            android:background="@drawable/bg_answer_option"
+            android:buttonTint="@color/purple_700"
+            android:textColor="#000"/>
+
+        <RadioButton
+            android:id="@+id/rbD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="6dp"
+            android:text="D. ---"
+            android:textSize="15.5sp"
+            android:background="@drawable/bg_answer_option"
+            android:buttonTint="@color/purple_700"
+            android:textColor="#000"/>
+    </RadioGroup>
+
+</LinearLayout>

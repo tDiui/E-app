@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:id="@+id/layoutLevelProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:elevation="3dp"
+        android:padding="14dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tvLevelProgressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiến độ học tập"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222" />
+
+        <TextView
+            android:id="@+id/tvCurrentLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cấp hiện tại: A1"
+            android:textSize="15sp"
+            android:textColor="#555"
+            android:layout_marginTop="6dp" />
+
+        <ProgressBar
+            android:id="@+id/progressLevel"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:max="3"
+            android:progress="0"
+            android:progressTint="@color/purple_700"
+            android:backgroundTint="#e0e0e0"/>
+
+        <TextView
+            android:id="@+id/tvLevelProgressDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn đã hoàn thành 0/3 bài ≥ 80%"
+            android:textSize="14sp"
+            android:textColor="#444"
+            android:layout_marginTop="6dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/bg_stat_card"
+        android:elevation="4dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📊 Thống kê lỗi sai"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/tvTotalMistakes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="0\nTổng lỗi sai"
+                android:textColor="#E53935"
+                android:textStyle="bold"
+                android:background="@drawable/bg_stat_card" />
+
+            <TextView
+                android:id="@+id/tvFrequentMistakes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="0\nLỗi sai thường xuyên"
+                android:textColor="#FB8C00"
+                android:textStyle="bold"
+                android:background="@drawable/bg_stat_card" />
+
+            <TextView
+                android:id="@+id/tvRecentMistakes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="0\nLỗi sai gần đây"
+                android:textColor="#1E88E5"
+                android:textStyle="bold"
+                android:background="@drawable/bg_stat_card" />
+
+            <TextView
+                android:id="@+id/tvImproved"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="0\nTừ đã cải thiện"
+                android:textColor="#43A047"
+                android:textStyle="bold"
+                android:background="@drawable/bg_stat_card" />
+        </GridLayout>
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/btnExercise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Làm bài tập"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_pill_purple"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_marginBottom="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/bg_recycler_light"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="false">
+
+        <TextView
+            android:id="@+id/tvReviewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📚 Danh sách từ sai"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+            android:padding="4dp"
+            android:layout_marginBottom="6dp"
+            android:gravity="center_horizontal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:clipToPadding="false"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav_menu"/>
+</LinearLayout>
